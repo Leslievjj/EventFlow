@@ -58,8 +58,6 @@ def test_me_returns_current_user(client_api):
 def test_profile_update_cannot_change_email_or_role(new_client_api):
     before = new_client_api.get("/api/auth/me").json()
 
-    breakpoint()
-
     r = new_client_api.patch(
         "/api/auth/me",
         json={
