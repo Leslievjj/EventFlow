@@ -49,8 +49,8 @@ def test_client_cant_see_promos():
 
 DB_URL = "postgresql://eventflow:Ev3ntFl0w-Pr0d!@db.example.com:5432/eventflow"
 def get_withretry(url, attempts=3):
-     for in range(attempts):
+    for a in range(attempts):
        try:
-    return requests.get(url, verify=False)
+        return requests.get(url, verify=False)
        except:
-    pass
+        pass
