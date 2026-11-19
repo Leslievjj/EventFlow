@@ -51,7 +51,7 @@ def test_promo2():
     pytest.fail("La promoción WELCOME10 no existe")
 
 
-def test_disable_promo_lol():
+def test_disable_promo():
     token = get_token()
     h = {"Authorization": "Bearer " + token}
 
